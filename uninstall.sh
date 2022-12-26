@@ -1,7 +1,7 @@
 #!/usr/bin/sh
 servicedir="$()"
 
-if [ $(whoami) == "root" ]; then
+if [ $(whoami) = "root" ]; then
 	sudo rm -rfv /usr/bin/setcharge
 	sudo rm -rfv /usr/lib/systemd/system/setcharge.service
 	sudo rm -rfv /etc/.battery.conf 
